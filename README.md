@@ -1,2 +1,0 @@
-# darshan-store
-General store
