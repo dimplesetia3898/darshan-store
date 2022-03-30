@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+:root{
+    ---green:#bac34e;
+    ---black:#222;
+    ---light-color:#666;
+    ---light-bg:#f3f3f3;
+    ---white:#fff;
+    ---border:.1rem solid rgba(0,0,0,0.1);
+    ---box-shadow:0 .5rem rgba(0,0,0,.1);
+}
+
+html{
+    font-size: 62.5%;
+     overflow-x: hidden;
+scroll-behavior:smooth;  
+    
+}
+section{
+    padding: 3rem 9%;
+}
+.heading{
+    background: url(Photo/6.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 12rem;
+    padding-bottom: 8rem;
+}
+.footer{
+    background: var(---light-bg);
+}
+.footer .box-container {
+    display: flex;
+    gap: 20rem;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box2 h3{
+      font-size: 2.2rem;
+      color: var(---black);
+      padding: 1rem 0;
+}
+ 
+ .box-container .box2  p{
+    font-size: 1.5rem;
+    color: var(---light-color);
+}
+ .box-container .box2 a{
+     font-size: 1.4rem;
+     color: var(---light-color);
+     padding: 1rem 0;
+     display: block;
+ }
+  .box2 a:hover{
+      color: var(---green);
+  }
+ .box2 i{
+       padding-right:.5rem; 
+       color: var(---light-bg)
+ }
+ form input[type="email"]{
+     width: 100%;
+     padding: 1rem 1.2rem;
+     font-size: 1.6rem;
+     color: var(---black);
+     margin: 1rem 0;
+     text-transform: none;
+ }
+
+.payment{
+    width: 80%;
+    margin-top: 2rem;
+}
+.credit{
+    text-align: center;
+    background: var(---green);
+    color: var(---white);
+    font-size: 2rem;
+}
+.content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: var(---green);
+    color: var(---white);
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+}
+.contact .btn:hover{
+    background: var(---black);
+}
+.banner-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.banner-container .banner{
+    flex: 1 1 40rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+.banner-container .banner img{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+.banner-container .banner .content{
+    position: absolute;
+    top: 50%; left: 4%;
+    transform: translateY(-50%);
+}
+ .banner-container .banner .content h3{
+     font-size: 3rem;
+     color: var(---black);
+ } 
+
+ .banner-container .banner .content p{
+     font-size: 2rem;
+     color: #333;
+ }
+ .banner-container .banner:hover img{
+     transform: scale(1.2) rotate(-5deg);
+ }
+
+ .heading h1{
+     color: var(---black);
+     font-size: 4rem;
+ }
+ .heading p{
+     padding-top: 1rem;
+     font-size: 2rem;
+     color: var(---light-color);
+ }
+.heading a{
+    color: var(---black);
+    padding-right: .5rem;
+}
+.heading a:hover{
+    color: var(---green);
+}
+  .tittle{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+    border-bottom: var(---border);
+    color: var(---black);
+}
+.tittle span{
+    color: var(---green);
+    padding-right: .5rem;
+}
+.tittle a{
+    margin-left: auto;
+    color: var(---light-color);
+    font-size: 1.5rem;
+}
+.tittle a:hover{
+    color: var(---green);
+}
+
+ .category .box-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+ .category .box-container .box{
+    flex: 1 1 16rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+ .category .box-container .box img{
+    height: 20rem;
+}
+.category .box-container .box h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(---light-color);
+}
+.category  .box h3:hover{
+    color: var(---green);
+}
+.products .box-container {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+ .products .box-container .box{
+     position: relative;
+     color: var(---light-bg);
+     text-align: center;
+     overflow: hidden;
+     flex: 1 1 25rem;
+     height:50rem;
+    
+     position: relative;
+
+ }
+ .products .box-container .box:hover .icons{
+     top: 0;
+ }
+ .products .box-container .box .icons{
+     position: absolute;
+     top: 105%; left: 0;
+     height: 30rem;
+     width: 100%;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     background: rgba(243, 243, 243, 0.8);
+     gap: 1rem;
+ }
+ .products .box-container .box .icons a{
+     font-size: 2rem;
+    height:5rem ;
+    width: 5rem;
+    line-height: 5rem;
+    background: var(---white);
+    box-shadow: var(---box-shadow);
+    color: var(---black)
+ }
+ .products .box .icons a:hover{
+ background: var(---green);
+ color: var(---white);
+ }
+ .products .box-container .box .image{
+     height: 30rem;
+     width: 100%;
+     overflow: hidden;
+ }
+ .products .box-container .box .image img{
+     height: 70%;
+     width: 50%;
+     object-fit: cover;
+ }
+ .products .box-container .box .content{
+     padding: 1.5rem;
+ }
+ .products .box-container .box .content h3{
+     font-size: 2rem;
+     color: var(---black);
+ }
+ .products .box-container .box .price{
+     font-size: 2rem;
+     color: var(---black);
+     padding: 1rem 0;
+ }
+ .products .box-container .box .stars i{
+     font-size: 1.7rem;
+     color: green;
+ }
+ .contact .icons-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.contact .icons-container .icons{
+    text-align: center;
+    border: var(---border);
+    flex: 1 1 29rem;
+    padding: 2rem ;
+    
+     
+}
+.contact .icons-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    background: var(---green);
+    color: var(---white);
+    border-radius: 50%;
+}
+.contact .icons-container .icons h3{
+    color: var(---black);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.contact .icons-container .icons p{
+    color: var(---light-color);
+    font-size: 1.5rem;
+   line-height: 2;
+   padding-bottom: .5rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.row ,
+form{
+    padding: 2rem;
+    border: var(---border);
+    flex: 1 1 40rem;
+}
+.row form h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+.row form .inputBox input{
+    width: 49%;
+}
+ .inputBox .box,
+ textarea{
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    border: var(---border);
+    color: var(---black);
+    text-transform: none;
+    margin: .7rem 0;
+    
+}
+textarea{
+    width:100%;
+    height: 15rem;
+    resize: none;
+}
+.row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+form .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: var(---green);
+    color: var(---white);
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+}
+form .btn:hover{
+    background: var(---black);
+}
+.map{
+  flex: 1 1 40rem;
+  width: 100%;
+}
+.deal {
+    background: url(photo/deal.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.deal .content{
+    min-width: 50rem;
+}
+.deal .content .title{
+  font-size: 4rem;
+  color: var(---black);
+}
+.deal .content .count-down{
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+.deal .content .btn:hover{
+    background: var(---black);
+}
+.deal .content .count-down .box{
+    width: 9rem;
+    text-align: center;
+    box-shadow: var(---box-shadow);
+    border: var(---border);
+}
+.deal .content .count-down .box h3{
+    color: var(---black);
+    background:#fff;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    font-size: 5rem;
+}
+.deal .content .count-down .box span{
+    display: block;
+    background: var(---black);
+    color: #fff;
+    width: 100%;
+    padding: .5rem;
+    font-size: 2rem;
+}
